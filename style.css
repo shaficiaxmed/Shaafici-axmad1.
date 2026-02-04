@@ -1,0 +1,113 @@
+
+:root {
+    --primary: #2c3e50;
+    --secondary: #27ae60;
+    --danger: #e74c3c;
+    --light: #f4f4f9;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--light);
+    
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background: var(--secondary);
+    border-radius: 5px;
+}
+
+.content-section {
+    display: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.active { display: block; }
+
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 40%;
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-btn { background: var(--secondary); color: white; border: none; padding: 10px 20px; cursor: pointer; }
+
+.task-items { list-style: none; padding: 0; }
+
+.task {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.taskDisabled { flex: 1; border: none; background: transparent; font-size: 16px; }
+
+button { cursor: pointer; border-radius: 3px; border: none; padding: 5px 10px; }
+.delete-btn { background: var(--danger); color: white; }
+.edit-btn { background: #f1c40f; color: black; }
+.complete-btn { background: var(--secondary); color: white; }
+
+@media (max-width: 600px) {
+    nav ul { flex-direction: column; text-align: center; }
+    #task-form { flex-direction: column; }
+    .dashboard { flex-direction: column; gap: 10px; align-items: center; }
+    .stat-box { width: 90%; }
+}
+footer{
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}

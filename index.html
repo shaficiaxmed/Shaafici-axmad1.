@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Gamified - CM241</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager with Gamification</h1>
+        <div class="user-info">
+            
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-target="services">Services</a></li>
+            <li><a href="#" class="nav-link" data-target="about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="content-section active">
+            
+            <div class="dashboard">
+                <div class="stat-box">
+                    <h3>Points s</h3>
+                    <p id="points">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Rank </h3>
+                    <p id="level">Beginner</p>
+                </div>
+            </div>
+
+            
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="What needs to be done?" required>
+                <button type="submit" class="add-btn">Add Task</button>
+            </form>
+            <p class="err" style="display:none;">Fadlan foomka soo buuxi!</p>
+
+            <ul class="task-items"></ul>
+            
+            <button class="clear-tasks">Clear All Tasks</button>
+        </section>
+
+        <section id="services" class="content-section">
+            <h2 style="text-align: center; background-color: black; color: white">our services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <h1> Maareynta Hawshaha</h1>
+                    <p>Waxaan kuu suurtagelinnaa inaad si nidaamsan u maamusho hawshahaaga maalinlaha ah.</p>
+                </div>
+                <div class="service-card">
+                    <h1>Nidaamka Dhibcaha</h1>
+                    <p>Hel 15 dhibcood hawl kasta oo aad si guul leh u dhammaystirto.</p>
+                </div>
+                <div class="service-card">
+                    <h1>Dabagalka daily l;istgaaga
+                        
+                    </h1>
+                    <p>Dashboard-ka wuxuu kuu muujinayaa dhibcahaaga iyo heerka (Rank) aad kaga jirto nidaamka.</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="about" class="content-section">
+            <h2 style="text-align: center; background-color: black; color: white">About ME</h2>
+            <p><p>Name: <strong>shaafici axmed ibrahim</strong> <br>
+                 ID: <strong>c5240069</strong> <br> 
+                 Class: <strong>CM241</strong> <br>
+                 pro: <strong>Task Manager with Gamification</strong> <br></p></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Task Manager Project | Developed by  shaafici</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
